@@ -1,0 +1,60 @@
+<nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <img class="img-responsive" src="../../assets/images/corazon.png" alt="">
+        <img class="img-responsive" src="../../assets/images/espada.png" alt="">
+        <button (click)="start()"class="btn btn-danger">{{ button[0] }}</button>
+        <img class="img-responsive" src="../../assets/images/diamante.png" alt="">
+        <img class="img-responsive" src="../../assets/images/trebol.png" alt="">
+        <button (click)="end()" class="btn btn-danger">{{ button[1] }}</button>
+        <img class="img-responsive" src="../../assets/images/corazon.png" alt="">
+        <img class="img-responsive" src="../../assets/images/espada.png" alt="">
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 *ngIf="option === 0">{{ subtitle[0] }}</h2>
+        <h2 *ngIf="option === 1">{{ subtitle[1] }}</h2>
+        <h2 *ngIf="option === 2">{{ subtitle[2] }}</h2>
+        <h2 *ngIf="option === 3">{{ subtitle[3] }}</h2>
+       
+        <div class="container-cards" [hidden]="state">
+          <img [hidden]="state1" (click)="found(img1)" #img1 class="col-3 img-responsive img" [src]="url" alt="1">
+          <img [hidden]="!state1" (click)="found(img1)"  #img1 class="col-3 img-responsive img" [src]="url0" alt="1">
+
+          <img [hidden]="state2" (click)="found(img2)" #img2 class="col-3 img-responsive img" [src]="url" alt="2" [attr.data2]="2">
+          <img [hidden]="!state2" (click)="found(img2)" #img2 class="col-3 img-responsive img" [src]="url0" alt="2">
+
+          <img [hidden]="state3" (click)="found(img3)" #img3 class="col-3 img-responsive img" [src]="url" alt="3">
+          <img [hidden]="!state3" (click)="found(img3)" #img3 class="col-3 img-responsive img" [src]="url1" alt="3">
+
+          <img [hidden]="state4" (click)="found(img4)" #img4 class="col-3 img-responsive img" [src]="url" alt="4">
+          <img [hidden]="!state4" (click)="found(img4)" #img4 class="col-3 img-responsive img" [src]="url1" alt="4">
+
+          <img [hidden]="state5" (click)="found(img5)" #img5 class="col-3 img-responsive img" [src]="url" alt="5">
+          <img [hidden]="!state5" (click)="found(img5)" #img5 class="col-3 img-responsive img" [src]="url2" alt="5">
+
+          <img [hidden]="state6" (click)="found(img6)" #img6 class="col-3 img-responsive img" [src]="url" alt="6">
+          <img [hidden]="!state6" (click)="found(img6)" #img6 class="col-3 img-responsive img" [src]="url2" alt="6">
+
+          <img [hidden]="state7" (click)="found(img7)" #img7 class="col-3 img-responsive img" [src]="url" alt="7">
+          <img [hidden]="!state7" (click)="found(img7)" #img7 class="col-3 img-responsive img" [src]="url3" alt="7">
+
+          <img [hidden]="state8" (click)="found(img8)" #img8 class="col-3 img-responsive img" [src]="url" alt="8">
+          <img [hidden]="!state8" (click)="found(img8)" #img8 class="col-3 img-responsive img" [src]="url3" alt="8">
+        </div>
+
+        <div class="text-center figure" [hidden]="!state">
+          <img class="img-responsive" src="../../assets/images/init-end.gif" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

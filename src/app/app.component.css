@@ -1,0 +1,21 @@
+/* ESTILOS PARA LOS COMPONENTES */
+header{
+  height: 170px;
+  height:100%;
+}
+
+main{
+  color: white;
+  height: 100%;
+}
+
+footer{
+  border-top:1px solid blanchedalmond;
+  background: rgb(0, 0, 0);
+  color: white;
+  height:100%;
+}
+
+footer h6{
+  padding: 20px 0;
+}

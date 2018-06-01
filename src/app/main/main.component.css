@@ -1,0 +1,54 @@
+nav{
+  height:100%;
+  margin:0 0 10px 0;
+}
+
+.red{
+  border: 1px solid red;
+}
+
+nav img{
+  width: 30px;
+  height: 30px;
+}
+
+nav button{
+  margin:0 10px;
+  padding: 5px 20px;
+  color:white;
+  font-weight: bold;
+}
+
+h2{
+  margin: 70px 0 10px 0;
+}
+
+section{
+  background: black;
+}
+
+.figure{
+  margin: 20px 0 0 0;
+  height: 40vh;
+}
+
+.figure img{
+  height: 230px;
+  width: 300px;
+}
+
+.container-cards{
+  padding: 20px 0 0 0;
+  height:40vh;
+}
+
+.container-cards figure{
+  width:120px ;
+  height:130px ;
+}
+
+.container-cards img{
+  width:120px ;
+  height:130px ;
+  border-radius: 10px;
+}
